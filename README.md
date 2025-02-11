@@ -74,13 +74,13 @@ And this will generate this kind of file:
 
 ```sql
 CREATE TABLE [Addresses] (
-    [IdUser] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY,
     [StreetNumber] int NOT NULL,
     [Street] nvarchar(10) NOT NULL,
     [ZipCode] int NOT NULL,
     [Town] nvarchar(10) NOT NULL,
     [Country] nvarchar(10) NOT NULL,
-    CONSTRAINT [PK_Addresses] PRIMARY KEY ([IdUser])
+    CONSTRAINT [PK_Addresses] PRIMARY KEY ([Id])
 );
 GO
 
